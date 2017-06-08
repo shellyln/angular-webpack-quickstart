@@ -10,6 +10,7 @@
         "sourceMap": true,
         "noEmitOnError": true,
         "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true,
         "noImplicitReturns": true,
         "noImplicitThis": true,
         "strictNullChecks": true,
@@ -17,6 +18,7 @@
         // "noUnusedLocals": true,
         // "noFallthroughCasesInSwitch": true,
         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "baseUrl": ".",
         "paths": {
         },
