@@ -99,7 +99,7 @@ module.exports = function (env) { return [
             compress: true,
             port: 8080
         },
-        devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'source-map'
+        devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'cheap-eval-source-map'
     }
 
 ]}
