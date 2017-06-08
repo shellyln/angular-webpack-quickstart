@@ -5,17 +5,20 @@
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
 
     <!-- Polyfill(s) for older browsers -->
-    <!-- <script src="node_modules/core-js/client/shim.min.js"></script> -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
 
-    <!-- <script src="node_modules/zone.js/dist/zone.js"></script> -->
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-
-    <script src="systemjs.config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.js"></script>
     <script>
-      System.import('main.js').catch(function(err){ console.error(err); });
+        require.config({
+            baseUrl: ".",
+            paths: {
+                // Don't add extension ".js".
+                "Quickstart": "main"
+            }
+        });
+        require(["Quickstart"]);
     </script>
   </head>
 

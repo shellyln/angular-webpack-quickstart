@@ -7,9 +7,9 @@
         "noEmitOnError": true,
         "noImplicitAny": true,
         "suppressImplicitAnyIndexErrors": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "strictNullChecks": true,
+        // "noImplicitReturns": true,
+        // "noImplicitThis": true,
+        // "strictNullChecks": true,
         // "noUnusedParameters": true,
         // "noUnusedLocals": true,
         // "noFallthroughCasesInSwitch": true,
@@ -19,7 +19,7 @@
         "paths": {
         },
         "traceResolution": true,
-        "types": ["node"]
+        "types": ["node", "jasmine"]
     },
     "exclude": [
         "bin",

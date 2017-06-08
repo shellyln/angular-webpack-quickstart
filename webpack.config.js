@@ -22,7 +22,7 @@ module.exports = function (env) { return [
             // TODO: YOU SHOULD REPLACE THE LIBRARY OUTPUT NAME!
             main: [
                 path.resolve(__dirname, 'node_modules/zone.js/dist/zone.js'),
-                path.resolve(__dirname, 'src/index.ts')
+                path.resolve(__dirname, 'src/main.ts')
             ]
         },
         // TODO: YOU SHOULD MODIFY PATTERN OF EXTERNAL MODULES!
@@ -35,7 +35,7 @@ module.exports = function (env) { return [
 
             libraryTarget: 'amd',
             filename: process.env.NODE_ENV === 'production' ? '[name].min.js' : '[name].js',
-            path: path.resolve(__dirname, 'dist'),
+            path: path.resolve(__dirname, 'src'),
             devtoolModuleFilenameTemplate: process.env.NODE_ENV === 'production' ? '[resource-path]' : void 0
         },
         module: {
@@ -65,7 +65,7 @@ module.exports = function (env) { return [
             }, {
                 test: /\.(css|scss)$/,
                 use: [
-                    'style-loader',
+                    'to-string-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -89,6 +89,15 @@ module.exports = function (env) { return [
         },
         resolve: {
             extensions: ['.tsx', '.ts', '.js']
+        },
+        devServer: {
+            contentBase: [
+                path.resolve(__dirname, "src"),
+                path.resolve(__dirname, "node_modules")
+            ],
+            publicPath: "/",
+            compress: true,
+            port: 8080
         },
         devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'source-map'
     }
