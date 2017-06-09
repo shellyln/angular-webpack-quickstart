@@ -1,17 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-
-var scssRoot = 'src/assets/scss';
-
-var scssDevToolFix = (info) => {
-    let search = `/${scssRoot}/`;
-    let fi = info.resourcePath.indexOf(search);
-    let li = info.resourcePath.lastIndexOf(search);
-    let s  = (fi < 0 || fi === li) ? info.resourcePath : info.resourcePath.substring(0, fi) + info.resourcePath.substring(li);
-    return `${s}`;
-};
 
 
 module.exports = function (env) { return [
@@ -99,7 +87,7 @@ module.exports = function (env) { return [
             compress: true,
             port: 8080
         },
-        devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'cheap-eval-source-map'
+        devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'cheap-module-eval-source-map'
     }
 
 ]}
