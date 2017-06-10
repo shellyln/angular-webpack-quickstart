@@ -20,7 +20,19 @@
     "lint": "tslint ./src/**/*.ts -t verbose",
     "watch": "webpack --config webpack.config.js --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "Angular",
+    "Quickstart",
+    "Webpack",
+    "Webpack2",
+    "TypeScript",
+    "SCSS",
+    "PostCSS",
+    "CI",
+    "scaffolding",
+    "Getting started",
+    "Starter"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
