@@ -32,11 +32,11 @@ Now you can continue working on the new project.
 
 ## Prerequisites
 
-Node.js and npm are essential to Angular development. 
-    
+Node.js and npm are essential to Angular development.
+
 <a href="https://docs.npmjs.com/getting-started/installing-node" target="_blank" title="Installing Node.js and updating npm">
 Get it now</a> if it's not already installed on your machine.
- 
+
 **Verify that you are running at least node `v4.x.x` and npm `3.x.x`**
 by running `node -v` and `npm -v` in a terminal/console window.
 Older versions produce errors.
@@ -57,25 +57,6 @@ Discard the `.git` folder..
 rm -rf .git  # OS/X (bash)
 rd .git /S/Q # windows
 ```
-### Delete _non-essential_ files (optional)
-
-You can quickly delete the _non-essential_ files that concern testing and QuickStart repository maintenance
-(***including all git-related artifacts*** such as the `.git` folder and `.gitignore`!)
-by entering the following commands while in the project folder:
-
-##### OS/X (bash)
-```shell
-xargs rm -rf < non-essential-files.osx.txt
-rm src/app/*.spec*.ts
-rm non-essential-files.osx.txt
-```
-
-##### Windows
-```shell
-for /f %i in (non-essential-files.txt) do del %i /F /S /Q
-rd .git /s /q
-rd e2e /s /q
-```
 
 ### Create a new git repo
 You could [start writing code](#start-development) now and throw it all away when you're done.
@@ -88,7 +69,7 @@ git add .
 git commit -m "Initial commit"
 ```
 
->Recover the deleted `.gitignore` from the QuickStart repository 
+>Recover the deleted `.gitignore` from the QuickStart repository
 if you lost it in the _Delete non-essential files_ step.
 
 Create a *remote repository* for this project on the service of your choice.
@@ -111,7 +92,7 @@ npm start
 
 >Doesn't work in _Bash for Windows_ which does not support servers as of January, 2017.
 
-The `npm start` command first compiles the application, 
+The `npm start` command first compiles the application,
 then simultaneously re-compiles and runs the `lite-server`.
 Both the compiler and the server watch for file changes.
 
@@ -125,7 +106,7 @@ We've captured many of the most useful commands in npm scripts defined in the `p
 
 * `npm start` - runs the compiler and a server at the same time, both in "watch mode".
 * `npm run build` - runs the TypeScript compiler once.
-* `npm run build:w` - runs the TypeScript compiler in watch mode; the process keeps running, awaiting changes to TypeScript files and re-compiling when it sees them.
+* `npm run watch` - runs the TypeScript compiler in watch mode; the process keeps running, awaiting changes to TypeScript files and re-compiling when it sees them.
 * `npm run serve` - runs the [lite-server](https://www.npmjs.com/package/lite-server), a light-weight, static file server, written and maintained by
 [John Papa](https://github.com/johnpapa) and
 [Christopher Martin](https://github.com/cgmartin)
