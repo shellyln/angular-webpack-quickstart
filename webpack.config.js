@@ -6,7 +6,7 @@ module.exports = function (env) { return [
 
     // [Browser-single-js-file]: Packing a library Javascript file.
     {
-        entry: {
+        entry: (env && env.env === 'test') ? void 0 : {
             // TODO: YOU SHOULD REPLACE THE LIBRARY OUTPUT NAME!
             main: [
                 path.resolve(__dirname, 'node_modules/zone.js/dist/zone.js'),
@@ -17,7 +17,7 @@ module.exports = function (env) { return [
         // If you call "require()" with passing modules paths matched to following pattern,
         // "require()" will be resolved runtime.
         //externals: /^(fs)$/,
-        output: {
+        output: (env && env.env === 'test') ? void 0 : {
             // TODO: YOU SHOULD REPLACE THE LIBRARY NAME!
             library: 'Quickstart',
 

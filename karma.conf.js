@@ -34,8 +34,14 @@ module.exports = function(config) {
     files: [
       // Polyfills
       'node_modules/core-js/client/shim.js',
+      'node_modules/zone.js/dist/zone.js',
+      'node_modules/zone.js/dist/proxy.js', // 'TypeError: Cannot read property 'assertPresent' of undefined'
+      'node_modules/zone.js/dist/sync-test.js', // 'TypeError: Cannot read property 'assertPresent' of undefined'
+      'node_modules/zone.js/dist/async-test.js', // Error: AsyncTestZoneSpec is needed for the async() test helper but could not be found.
+      'node_modules/zone.js/dist/jasmine-patch.js', // 'TypeError: Cannot read property 'assertPresent' of undefined'
+      // ANY OTHER FILES TO LOAD FOR YOUR TESTS
 
-      {pattern: 'test/test.js', watched: false}
+      {pattern: 'test/index.js', watched: false}
     ],
 
     exclude: [],
@@ -45,13 +51,13 @@ module.exports = function(config) {
     // },
 
     preprocessors: {
-      'test/test.js': ['webpack', 'sourcemap']
+      'test/index.js': ['webpack', 'sourcemap']
     },
     webpack: require('./webpack.config')({env: 'test'}),
 
     reporters: [
       'progress',
-      'kjhtml'
+      // 'kjhtml'
     ],
 
     port: 9876,
@@ -59,7 +65,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
     autoWatch: false,
     browsers: ['Chrome'],
-    singleRun: false,
+    singleRun: true,
     //concurrency: Infinity
   })
 }
