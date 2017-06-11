@@ -1,8 +1,8 @@
 {
-  "name": "angular-quickstart",
-  "version": "1.0.0",
+  "name": "angular-webpack-quickstart",
+  "version": "0.0.0",
   "private": true,
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "Angular QuickStart with Webpack 2 - source from the documentation.",
   "scripts": {
     "clean": "rimraf src/main.js src/main.min.js src/*.map",
     "build": "run-s build:prod",
@@ -24,6 +24,8 @@
   },
   "keywords": [
     "Angular",
+    "Angular2",
+    "Angular4",
     "Quickstart",
     "Webpack",
     "Webpack2",
@@ -35,7 +37,7 @@
     "Getting started",
     "Starter"
   ],
-  "author": "",
+  "author": "shellyln",
   "license": "MIT",
   "dependencies": {
     "systemjs": "0.19.40",
