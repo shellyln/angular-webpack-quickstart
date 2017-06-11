@@ -1,6 +1,6 @@
 {
   "name": "angular-webpack-quickstart",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Angular QuickStart with Webpack 2 - source from the documentation.",
   "scripts": {
