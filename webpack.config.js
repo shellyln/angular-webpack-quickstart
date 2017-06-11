@@ -22,7 +22,7 @@ module.exports = function (env) { return [
             library: 'Quickstart',
 
             libraryTarget: 'amd',
-            filename: process.env.NODE_ENV === 'production' ? '[name].min.js' : '[name].js',
+            filename: process.env.NODE_ENV === 'production' ? '[name].js' : '[name].js',
             path: path.resolve(__dirname, 'src'),
             devtoolModuleFilenameTemplate: process.env.NODE_ENV === 'production' ? '[resource-path]' : void 0
         },

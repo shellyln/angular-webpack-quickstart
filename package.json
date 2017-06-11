@@ -4,10 +4,12 @@
   "private": true,
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
+    "clean": "rimraf src/main.js src/main.min.js src/*.map",
     "build": "run-s build:prod",
     "build:dev": "webpack --config webpack.config.js",
     "build:prod": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
     "build:e2e": "tsc -p e2e/",
+    "rebuild": "run-s clean build",
     "serve": "lite-server -c=bs-config.json",
     "serve:e2e": "lite-server -c=bs-config.e2e.json",
     "start": "run-p watch serve",
