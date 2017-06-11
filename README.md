@@ -5,7 +5,7 @@ the foundation for most of the documentation samples and potentially a good star
 forked from [angular/quickstart](https://github.com/angular/quickstart)
 
 [![GitHub release](https://img.shields.io/github/release/shellyln/angular-webpack-quickstart.svg)](https://github.com/shellyln/angular-webpack-quickstart/releases)
-[![Travis](https://img.shields.io/travis/shellyln/angular-webpack-quickstart.svg)](https://travis-ci.org/shellyln/angular-webpack-quickstart)
+[![Travis](https://img.shields.io/travis/shellyln/angular-webpack-quickstart.svg)](https://travis-ci.org/shellyln/angular-webpack-quickstart/master)
 [![GitHub forks](https://img.shields.io/github/forks/shellyln/angular-webpack-quickstart.svg?style=social&label=Fork)](https://github.com/shellyln/angular-webpack-quickstart/fork)
 [![GitHub stars](https://img.shields.io/github/stars/shellyln/angular-webpack-quickstart.svg?style=social&label=Star)](https://github.com/shellyln/angular-webpack-quickstart)
 
