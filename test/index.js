@@ -8,5 +8,5 @@ TestBed.initTestEnvironment(BrowserDynamicTestingModule, platformBrowserDynamicT
 
 // require all modules ending in ".spec" from the
 // current directory and all subdirectories by webpack.
-var testsContext = require.context("../src", true, /.spec$/);
+var testsContext = require.context("../src", true, /\.spec$/);
 testsContext.keys().forEach(testsContext);

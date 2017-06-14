@@ -56,7 +56,8 @@ module.exports = function (config) {
         webpack: require('./webpack.config')({ env: 'test' }),
 
         reporters: [
-            'progress',
+            'spec',
+            // 'progress',
             // 'kjhtml'
         ],
 
