@@ -4,7 +4,7 @@ This repository holds the TypeScript source code of the [angular.io quickstart](
 the foundation for most of the documentation samples and potentially a good starting point for your application.  
 Forked from [angular/quickstart](https://github.com/angular/quickstart).
 
-[![npm](https://img.shields.io/npm/v/webpack-typescript-lib-quickstart.svg)](https://www.npmjs.com/package/angular-webpack-quickstart)
+[![npm](https://img.shields.io/npm/v/angular-webpack-quickstart.svg)](https://www.npmjs.com/package/angular-webpack-quickstart)
 [![GitHub release](https://img.shields.io/github/release/shellyln/angular-webpack-quickstart.svg)](https://github.com/shellyln/angular-webpack-quickstart/releases)
 [![Travis](https://img.shields.io/travis/shellyln/angular-webpack-quickstart/master.svg)](https://travis-ci.org/shellyln/angular-webpack-quickstart)
 [![GitHub forks](https://img.shields.io/github/forks/shellyln/angular-webpack-quickstart.svg?style=social&label=Fork)](https://github.com/shellyln/angular-webpack-quickstart/fork)
