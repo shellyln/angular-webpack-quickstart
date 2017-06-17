@@ -1,6 +1,6 @@
 {
   "name": "angular-webpack-quickstart",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Angular QuickStart with Webpack 2 - source from the documentation.",
   "scripts": {
     "clean": "rimraf src/main.js src/main.min.js src/*.map",
