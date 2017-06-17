@@ -2,8 +2,9 @@
 
 This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
 the foundation for most of the documentation samples and potentially a good starting point for your application.  
-forked from [angular/quickstart](https://github.com/angular/quickstart)
+Forked from [angular/quickstart](https://github.com/angular/quickstart).
 
+[![npm](https://img.shields.io/npm/v/webpack-typescript-lib-quickstart.svg)](https://www.npmjs.com/package/angular-webpack-quickstart)
 [![GitHub release](https://img.shields.io/github/release/shellyln/angular-webpack-quickstart.svg)](https://github.com/shellyln/angular-webpack-quickstart/releases)
 [![Travis](https://img.shields.io/travis/shellyln/angular-webpack-quickstart/master.svg)](https://travis-ci.org/shellyln/angular-webpack-quickstart)
 [![GitHub forks](https://img.shields.io/github/forks/shellyln/angular-webpack-quickstart.svg?style=social&label=Fork)](https://github.com/shellyln/angular-webpack-quickstart/fork)
@@ -119,7 +120,7 @@ We've captured many of the most useful commands in npm scripts defined in the `p
 with excellent support for Angular apps that use routing.
 
 Here are the test related scripts:
-* `npm test` - compiles, runs and watches the karma unit tests
+* `npm test` - compiles, runs once the karma unit tests
 * `npm run e2e` - compiles and run protractor e2e tests, written in Typescript (*e2e-spec.ts)
 
 ## Testing
@@ -169,6 +170,3 @@ A custom reporter (see `protractor.config.js`) generates a  `./_test-output/prot
 which is easier to read; this file is excluded from source control.
 
 Shut it down manually with `Ctrl-C`.
-
-[travis-badge]: https://travis-ci.org/angular/quickstart.svg?branch=master
-[travis-badge-url]: https://travis-ci.org/angular/quickstart
