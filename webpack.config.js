@@ -26,6 +26,7 @@ module.exports = function (env) { return [
             path: path.resolve(__dirname, 'src'),
             devtoolModuleFilenameTemplate: process.env.NODE_ENV === 'production' ? '[resource-path]' : void 0
         },
+        target: "web",
         module: {
             rules: [{
                 test: /\.tsx?$/,
